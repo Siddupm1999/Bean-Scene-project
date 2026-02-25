@@ -1,0 +1,48 @@
+.flavors {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.flavors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.flavor-card {
+  text-align: center;
+  padding: 20px;
+  background-color: #FDF5ED;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.flavor-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ✅ FIXED IMAGE STYLE */
+.flavor-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Keeps image ratio properly */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.flavor-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2C1810;
+}
+
+.flavor-ratio {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #B85C38;
+  font-weight: 500;
+}

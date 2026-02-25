@@ -1,0 +1,112 @@
+.morning {
+  width: 100%;
+  height: 574px;
+  background-size: cover;
+  background-position: center right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Dark Overlay */
+.morning-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(44, 24, 16, 0.9),
+    rgba(44, 24, 16, 0.3)
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Content Layout */
+.morning-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+/* LEFT TEXT */
+.morning-text {
+  max-width: 575px;
+  color: white;
+  z-index: 2;
+}
+
+.morning-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.morning-text span {
+  color: #f9c06a;
+}
+
+.morning-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.morning-btn {
+  margin-top: 30px;
+  width: 134px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  background-color: #f9c06a;
+  color: #2c1810;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.morning-btn:hover {
+  background-color: #e5ac4f;
+}
+
+/* RIGHT CUP */
+.morning-images {
+  position: relative;
+  z-index: 2;
+}
+
+.cup-img {
+  width: 300px;
+  height: 467px;
+}
+
+/* BEANS IMAGE (Now positioned relative to full section) */
+.beans-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+  max-width: 50%;
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .morning-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .morning-images {
+    margin-top: 40px;
+  }
+
+  .beans-img {
+    display: none;
+  }
+}

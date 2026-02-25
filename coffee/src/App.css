@@ -1,0 +1,30 @@
+.App {
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF5ED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B85C38;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9A4A2E;
+}

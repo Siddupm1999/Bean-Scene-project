@@ -1,0 +1,118 @@
+.footer {
+  position: relative;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 100px 0 50px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* STRONG DARK OVERLAY */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(17, 10, 0, 0.986)
+  );
+  z-index: 1;
+}
+
+/* Keep content above overlay */
+.footer-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Layout */
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+/* Brand */
+.footer-brand {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+/* Description */
+.footer-description {
+  line-height: 1.8;
+  opacity: 0.95;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+/* Section Titles */
+.footer-section h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #F9C06A;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 14px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.95;
+  transition: 0.3s ease;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+.footer-section ul li a:hover {
+  color: #F9C06A;
+}
+
+/* Contact */
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+.contact-info svg {
+  color: #F9C06A;
+  margin-top: 4px;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  opacity: 0.9;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
