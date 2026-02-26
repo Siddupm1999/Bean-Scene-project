@@ -1,8 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Globe } from 'lucide-react';
 import './Footer.css';
-// import bottomBeans from '../assets/Images/wings2.png';
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -48,7 +46,7 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <ul className="contact-info">
               <li>
-                <MapPin size={18} />
+                <MapPin size={15} />
                 <span>Akshya Nagar 1st Block 1st Cross, Ramamurthy Nagar, Bangalore-560016</span>
               </li>
               <li>

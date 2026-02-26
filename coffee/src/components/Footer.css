@@ -8,15 +8,12 @@
   overflow: hidden;
 }
 
-/* STRONG DARK OVERLAY */
 .footer::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(17, 10, 0, 0.986)
-  );
-  z-index: 1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(68, 40, 8, 0.95));
+    z-index: 1;
 }
 
 /* Keep content above overlay */
@@ -55,6 +52,7 @@
   font-size: 20px;
   margin-bottom: 25px;
   color: #F9C06A;
+  opacity: 0.95;
   text-shadow: 0 3px 8px rgba(0,0,0,0.8);
 }
 

@@ -2,10 +2,16 @@ import React from "react";
 import { Star } from "lucide-react";
 import "./Testimonials.css";
 import photo from "../assets/Images/photo.jpg";
+import splashTop from "../assets/Images/splash-top.png";     // 2nd image (rotated)
+import splashBottom from "../assets/Images/splash-bottom.png"; // 1st image
 
 const Testimonials = () => {
   return (
     <section className="testimonials">
+      {/* Splash Images */}
+      <img src={splashTop} alt="coffee splash" className="splash splash-top" />
+      <img src={splashBottom} alt="coffee splash" className="splash splash-bottom" />
+
       <div className="container">
         <h2 className="section-title">Our coffee perfection feedback</h2>
         <p className="section-subtitle">
@@ -23,16 +29,11 @@ const Testimonials = () => {
             <p className="testimonial-text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset.....
+              ever since the 1500s...
             </p>
 
             <div className="testimonial-author">
               <img src={photo} alt="Jonny Thomas" className="author-img" />
-
               <h4>Jonny Thomas</h4>
               <p>Project Manager</p>
             </div>

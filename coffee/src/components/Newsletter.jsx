@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import './Newsletter.css';
-import bgImage from '../assets/Images/coffee-land.jpg';
+import React, { useState } from "react";
+import "./Newsletter.css";
+import bgImage from "../assets/Images/coffee-land.jpg";
+import wingsLeft from "../assets/Images/wingsleft.png";
+import wingsRight from "../assets/Images/wingsright.png";
 
 const Newsletter = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Subscribed:', email);
-    setEmail('');
+    setEmail("");
   };
 
   return (
@@ -16,14 +17,14 @@ const Newsletter = () => {
       className="newsletter"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="newsletter-overlay">
-        <div className="container newsletter-content">
+      {/* Side Images */}
+      <img src={wingsLeft} alt="left splash" className="cup left" />
+      <img src={wingsRight} alt="right splash" className="cup right" />
 
-          <h2 className="newsletter-title">
-            Subscribe to get the Latest News
-          </h2>
-
-          <p className="newsletter-subtitle">
+      <div className="overlay">
+        <div className="newsletter-content">
+          <h2>Subscribe to get the Latest News</h2>
+          <p>
             Don't miss out on our latest news, updates, tips and special offers
           </p>
 
@@ -34,13 +35,9 @@ const Newsletter = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="newsletter-input"
             />
-            <button type="submit" className="newsletter-btn">
-              Subscribe
-            </button>
+            <button type="submit">Subscribe</button>
           </form>
-
         </div>
       </div>
     </section>
